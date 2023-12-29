@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.todo-container {
+    width: 500px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.task-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+#newTask{
+    margin-bottom: 10px;
+    width: 450px;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0 0 2px 0.4px rgb(99, 99, 99);
+}
+.division span{
+   margin: 20px;
+}
+.add-task{
+    display: flex;
+    gap: 10px;
+
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+#tasks{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+button{
+    background-color: #ff4136;
+    color: #fff;
+    border: none;
+    width: 80px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+#deleteBtn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    transform: translateX(-50%,-50%);
+    width: fit-content;
+    padding: 5px 10px;
+}
+#addTaskBtn{
+    font-size: 15px;
+    transition: 0.1s ease-in;
+    background-color: #1e54eb;
+}
+#addTaskBtn:hover{
+    background-color: #0745ee;
+    transform: scale(98%);
+}
+
+button:hover {
+    background-color: #d63031;
+}
+
+@media (max-width:375px){
+    .todo-container{
+        max-width: 355px;
+        padding: 10px;
+    }
+}
