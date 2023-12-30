@@ -6,17 +6,16 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding:100px;
 }
 .todo-container {
-    width: 500px;
-    height: auto;
+    width: 350px;
     background-color: #fff;
-    padding: 20px;
+    padding:0 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px black;
     position: relative;
@@ -34,7 +33,7 @@ body {
 }
 #newTask{
     margin-bottom: 10px;
-    width: 450px;
+    width: 340px;
     padding: 5px;
     padding-left: 20px;
     font-size: 20px;
@@ -103,9 +102,12 @@ button:hover {
     background-color: #d63031;
 }
 
-@media (max-width:375px){
+@media (min-width:650px){
     .todo-container{
-        max-width: 355px;
+        min-width: 500px;
         padding: 10px;
+    }
+    #newTask{
+        width: 450px;
     }
 }
