@@ -31,9 +31,7 @@ function addTask() {
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
 
-  deleteButton.onclick = function () {
-    tasksContainer.removeChild(taskItem);
-  };
+
   taskItem.appendChild(division);
 
   division.appendChild(checkbox);
@@ -44,6 +42,10 @@ function addTask() {
 
   newTaskInput.value = '';
 }
+
+  deleteButton.onclick = function () {
+    tasksContainer.removeChild(taskItem);
+  };
 
 // Delete Completed Tasks Function
 function deleteCompletedTasks() {
