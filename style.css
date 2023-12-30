@@ -92,6 +92,9 @@ button{
     font-size: 15px;
     transition: 0.1s ease-in;
     background-color: #1e54eb;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
 #addTaskBtn:hover{
     background-color: #0745ee;
